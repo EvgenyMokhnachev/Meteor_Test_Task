@@ -1,0 +1,14 @@
+<template name="postTemplate">
+    <a href="{{pathFor 'postPageTemplate'}}" class="list-group-item <!--active-->">
+        <p class="list-group-item-text">Author: {{author.username}}, date: {{createdAt}}, votes: {{getVotes}}
+            {{#if isVoted}}
+            <span class="changeVoteBn down glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+            {{else}}
+            <span class="changeVoteBn up glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+            {{/if}}
+        </p>
+        <h4 class="list-group-item-heading">
+            {{text}}
+        </h4>
+    </a>
+</template>

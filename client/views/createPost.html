@@ -1,0 +1,16 @@
+<template name="createPostTemplate">
+    <form name="createPostForm" class="form-group">
+        <label for="postTextarea">Enter your post:</label>
+        <textarea name="postTextarea" class="form-control" rows="5" id="postTextarea"></textarea>
+        <p  class="text-center" id="createPostErrors"></p>
+        <br/>
+        <div class="text-center">
+            <label class="radio-inline"><input type="radio" name="privatePost" value="false" checked>Public</label>
+            <label class="radio-inline"><input type="radio" name="privatePost" value="true">Private</label>
+        </div>
+        <br/>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Create post</button>
+        </div>
+    </form>
+</template>

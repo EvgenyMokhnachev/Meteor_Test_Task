@@ -1,0 +1,25 @@
+<template name="profileTemplate">
+    <div class="media">
+        <div class="media-left media-middle">
+            <a href="#">
+                <img id="userAvatarImg" class="media-object" src="{{getGravatar}}" alt="user avatar">
+            </a>
+        </div>
+        <div class="media-body">
+            <form name="userData">
+                <div class="input-group">
+                    <div></div>
+                    <input name="username" type="text" class="form-control" placeholder="Username" value="{{username}}"/>
+                    <input name="email" type="email" class="form-control" placeholder="Email" value="{{email}}"/>
+                    <input name="firstName" type="text" class="form-control" placeholder="First name" value="{{firstName}}"/>
+                    <input name="lastName" type="text" class="form-control" placeholder="Last name" value="{{lastName}}"/>
+                    <p id="errorSaveProfile"></p>
+                </div>
+                <br/>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>
